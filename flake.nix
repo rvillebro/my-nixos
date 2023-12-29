@@ -28,7 +28,7 @@
             home-manager.users.rav = import ./home;
           }
         ];
-      }
+      };
 
       nixos-test = {
         system = "x86_64-linux";
@@ -43,7 +43,7 @@
             home-manager.users.rasmus = import ./home;
           }
         ];
-      }
-    }
+      };
+    };
   }
 }
