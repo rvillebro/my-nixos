@@ -42,4 +42,10 @@
     description = "rav";
     extraGroups = [ "networkmanager" "wheel" ];
   };
+
+  nix.settings = {
+    # enable flakes globally
+    experimental-features = ["nix-command" "flakes"];
+    trusted-users = ["rasmus"];
+  };
 }
