@@ -14,7 +14,7 @@
     home-manager,
     ...
   }: {
-    nixosConfiguration = {
+    nixosConfigurations = {
       xps13 = {
         system = "x86_64-linux";
         modules = [
