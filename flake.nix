@@ -15,7 +15,7 @@
     ...
   }: {
     nixosConfigurations = {
-      xps13 = {
+      xps13 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./hosts/xps13
@@ -30,7 +30,7 @@
         ];
       };
 
-      nixos-test = {
+      nixos-test = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./hosts/nixos-test
