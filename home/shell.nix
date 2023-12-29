@@ -23,10 +23,6 @@
       BROWSER = "firefox";
       TERMINAL = "alacritty";
     };
-
-    # shellAliases = {
-    #   k = "kubectl";
-    # };
   };
 
   programs = {

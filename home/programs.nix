@@ -13,10 +13,10 @@
     fd
 
     # misc
-    xdg-utils
+    # xdg-utils
 
     # productivity
-    obsidian
+    # obsidian
 
     # python
     python310
@@ -25,18 +25,25 @@
   ];
 
   programs = {
+    firefox = {
+      enable = true;
+      profiles.rav = {};
+    };
     tmux = {
       enable = true;
       clock24 = true;
     };
-
     bat = {
       enable = true;
       config = {
         pager = "less -FR";
       };
     };
-
+    git = {
+      enable = true;
+      userName = "Rasmus Villebro";
+      userEmail = "rasmus-villebro@hotmail.com";
+    };
     btop.enable = true;  # replacement of htop/nmon
     exa.enable = true;   # A modern replacement for ‘ls’
     ssh.enable = true;
