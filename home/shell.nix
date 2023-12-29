@@ -14,7 +14,7 @@
 
     sessionVariables = {
       # clean up ~
-      STARSHIP_CACHE = "${config.xdg.cacheHome}/starship"
+      STARSHIP_CACHE = "${config.xdg.cacheHome}/starship";
       LESSHISTFILE = "${config.xdg.cacheHome}/less/history";
       LESSKEY = "${config.xdg.configHome}/less/lesskey";
 
