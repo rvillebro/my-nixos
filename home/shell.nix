@@ -1,8 +1,5 @@
-{
-  pkgs,
-  config,
-  ...
-}: let
+{ pkgs, config, ... }: 
+
 {
   home = {
     packages = with pkgs; [
